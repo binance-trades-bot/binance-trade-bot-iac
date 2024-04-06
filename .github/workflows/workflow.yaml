@@ -1,0 +1,11 @@
+name: Desploy Infra
+on: [push]
+
+jobs:
+    infra:
+        uses: PedroHPAlmeida/actions-workflows-terraform/.github/workflows/terraform.yaml@1.3
+        with:
+            terraform_version: '1.7.5'
+            working-directory: ./
+        secrets:
+            tf_api_token: ${{ secrets.TF_API_TOKEN }}
