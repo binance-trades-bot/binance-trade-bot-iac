@@ -17,7 +17,7 @@ resource "aws_iam_role" "role_binance_trades_bot" {
 }
 
 resource "aws_iam_policy" "policy_kms" {
-  name        = "binance_trades_access_kms"
+  name = "binance_trades_access_kms"
 
   policy = jsonencode({
     Version = "2012-10-17"
