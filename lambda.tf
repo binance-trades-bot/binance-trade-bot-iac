@@ -4,7 +4,7 @@ resource "aws_lambda_function" "lambda_function" {
   role          = aws_iam_role.role_binance_trades_bot.arn
   handler       = "handler.handler"
   runtime       = "python3.10"
-  timeout       = 900
+  timeout       = 30
 
   environment {
     variables = {
