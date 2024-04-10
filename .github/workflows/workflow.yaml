@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
     infra:
-        uses: PedroHPAlmeida/actions-workflows-terraform/.github/workflows/terraform.yaml@1.3
+        uses: PedroHPAlmeida/actions-workflows-terraform/.github/workflows/terraform.yaml@1.4
         with:
             terraform_version: '1.7.5'
             working-directory: ./
