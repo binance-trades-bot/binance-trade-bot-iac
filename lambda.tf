@@ -16,6 +16,8 @@ resource "aws_lambda_function" "lambda_binance_trades" {
       BINANCE_API_KEY      = var.BINANCE_API_KEY
       BINANCE_SECRET_KEY   = var.BINANCE_SECRET_KEY
       MONGO_CONNECT_STRING = var.MONGO_CONNECT_STRING
+      TELEGRAM_BOT_TOKEN   = var.TELEGRAM_BOT_TOKEN
+      TELEGRAM_CHAT_ID     = var.TELEGRAM_CHAT_ID
     }
   }
 }

@@ -13,6 +13,16 @@ variable "MONGO_CONNECT_STRING" {
   sensitive = true
 }
 
+variable "TELEGRAM_BOT_TOKEN" {
+  type      = string
+  sensitive = true
+}
+
+variable "TELEGRAM_CHAT_ID" {
+  type      = string
+  sensitive = true
+}
+
 variable "lambda_function_name" {
   type    = string
   default = "binance_trades"
