@@ -18,6 +18,7 @@ resource "aws_lambda_function" "lambda_binance_trades" {
       MONGO_CONNECT_STRING = var.MONGO_CONNECT_STRING
       TELEGRAM_BOT_TOKEN   = var.TELEGRAM_BOT_TOKEN
       TELEGRAM_CHAT_ID     = var.TELEGRAM_CHAT_ID
+      GOOGLE_API_KEY       = var.GOOGLE_API_KEY
     }
   }
 }

@@ -23,6 +23,11 @@ variable "TELEGRAM_CHAT_ID" {
   sensitive = true
 }
 
+variable "GOOGLE_API_KEY" {
+  type      = string
+  sensitive = true
+}
+
 variable "lambda_function_name" {
   type    = string
   default = "binance_trades"
