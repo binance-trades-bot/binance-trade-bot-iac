@@ -28,6 +28,11 @@ variable "GOOGLE_API_KEY" {
   sensitive = true
 }
 
+variable "OPENAI_API_KEY" {
+  type      = string
+  sensitive = true
+}
+
 variable "lambda_function_name" {
   type    = string
   default = "binance_trades"

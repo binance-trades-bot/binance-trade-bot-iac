@@ -19,6 +19,7 @@ resource "aws_lambda_function" "lambda_binance_trades" {
       TELEGRAM_BOT_TOKEN   = var.TELEGRAM_BOT_TOKEN
       TELEGRAM_CHAT_ID     = var.TELEGRAM_CHAT_ID
       GOOGLE_API_KEY       = var.GOOGLE_API_KEY
+      OPENAI_API_KEY       = var.OPENAI_API_KEY
     }
   }
 }
