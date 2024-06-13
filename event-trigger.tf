@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_event_rule" "lambda_trigger" {
   name                = "binance-trade-event"
-  schedule_expression = "rate(2 hours)"
+  schedule_expression = "rate(2 minute)"
 }
 
 resource "aws_cloudwatch_event_target" "lambda" {
